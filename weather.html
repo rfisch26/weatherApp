@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Weather</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+		<link href="weather.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+		<script src="weather.js"></script>
+	</head>
+	<body>
+		<nav>
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a class="active" href="weather.html">Weather</a></li>
+                                <li><a href="dhs.html">Search History</a></li>
+                        </ul>
+                </nav>
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<form>
+						<label for="fuzzySearch">Enter a location:</label>
+						<input type="text" id="fuzzySearch" name="fuzzySearch" placeholder="City">
+						<input type="button" id="submitSearch" value="Submit" onclick="getFuzzySearch()">
+					</form>
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-2 forecast">
+					<img src="" id="icon">
+					<p>Date: <span id="date"></span></p>
+					<p>Day of the Week: <span id="dayOfWeek"></span></p>
+					<p>High: <span id="high"></span>&deg; F</p>
+					<p>Low: <span id="low"></span>&deg; F</p>
+					<p>Forecast: <span id="forecast"></span></p>
+					<p>Visibility: <span id="visibility"></span>m</p>
+					<p>Humidity: <span id="humidity"></span>%</p>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-2 forecast">
+                                        <img src="" id="icon2">
+                                        <p>Date: <span id="date2"></span></p>
+                                        <p>Day of the Week: <span id="dayOfWeek2"></span></p>
+                                        <p>High: <span id="high2"></span>&deg; F</p>
+                                        <p>Low: <span id="low2"></span>&deg; F</p>
+                                        <p>Forecast: <span id="forecast2"></span></p>
+                                        <p>Visibility: <span id="visibility2"></span>m</p>
+                                        <p>Humidity: <span id="humidity2"></span>%</p>
+                                </div>
+				<div class="col-sm-6 col-md-6 col-lg-2 forecast">
+                                        <img src="" id="icon3">
+                                        <p>Date: <span id="date3"></span></p>
+                                        <p>Day of the Week: <span id="dayOfWeek3"></span></p>
+                                        <p>High: <span id="high3"></span>&deg; F</p>
+                                        <p>Low: <span id="low3"></span>&deg; F</p>
+                                        <p>Forecast: <span id="forecast3"></span></p>
+                                        <p>Visibility: <span id="visibility3"></span>m</p>
+                                        <p>Humidity: <span id="humidity3"></span>%</p>
+                                </div>
+				<div class="col-sm-6 col-md-6 col-lg-2 forecast">
+                                        <img src="" id="icon4">
+                                        <p>Date: <span id="date4"></span></p>
+                                        <p>Day of the Week: <span id="dayOfWeek4"></span></p>
+                                        <p>High: <span id="high4"></span>&deg; F</p>
+                                        <p>Low: <span id="low4"></span>&deg; F</p>
+                                        <p>Forecast: <span id="forecast4"></span></p>
+                                        <p>Visibility: <span id="visibility4"></span>m</p>
+                                        <p>Humidity: <span id="humidity4"></span>%</p>
+                                </div>
+				<div class="col-sm-6 col-md-6 col-lg-2 forecast">
+                                        <img src="" id="icon5">
+                                        <p>Date: <span id="date5"></span></p>
+                                        <p>Day of the Week: <span id="dayOfWeek5"></span></p>
+                                        <p>High: <span id="high5"></span>&deg; F</p>
+                                        <p>Low: <span id="low5"></span>&deg; F</p>
+                                        <p>Forecast: <span id="forecast5"></span></p>
+                                        <p>Visibility: <span id="visibility5"></span>m</p>
+                                        <p>Humidity: <span id="humidity5"></span>%</p>
+					<br><br><br><br><br>
+                                </div>
+			</div>
+		</div>
+		<br><br><br><br><br>
+		<script src="weather.js"></script>
+	</body>
+	<br><br><br><br><br>
+</html>
